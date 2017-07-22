@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import TopSearch  from './top-search';
 import VideosLists  from './video-lists';
 import VideoDetail  from './video-detail';
@@ -26,9 +25,7 @@ class RootLayout extends Component {
     }
 }
 const mapStateToProps = (state) =>{
-    return {
-        term : state.searchVideo
-    }
+    return {};
 }
 
 export default connect(mapStateToProps)(RootLayout)

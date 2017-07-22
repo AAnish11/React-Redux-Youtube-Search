@@ -1,5 +1,4 @@
 export function searchTerm(term){
-    console.log(term)  
     return {
         type : 'VIDEO_SEARCH',
         term : term
